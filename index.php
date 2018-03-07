@@ -2,11 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>Portfolio</title>
 <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>test2
+<body><div class="content">Site contents here.</div>
 </body>
 </html>
 </html>
