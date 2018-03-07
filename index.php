@@ -6,7 +6,7 @@
 <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body><div class="content">Site contents here.</div>
+<body><div class="content">Site contents here. Test</div>
 </body>
 </html>
 </html>
