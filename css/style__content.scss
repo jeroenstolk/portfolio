@@ -1,0 +1,39 @@
+﻿.auth-key { width: 100%; float: left; clear: both; padding: 0.5em; border: 2px solid #000; color: #333; margin: 1em 0; text-align: center; }
+
+.emulation { float: left; display: block; width: 100%; background-color: rgba(0,0,0,0.8); z-index: 10; color: #ccc; height: auto; padding-left: 1em; }
+
+.emulation span { float: left; clear: none; height: 2.5em; padding-top: 0.7em; font-size: 1.1rem; margin: 0; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); }
+
+.emulation span.dynamic { font-weight: bold; text-transform: uppercase; background-color: #000; color: #fff; margin: 0 1em 0 0.5em; padding-left: 0.5em; padding-right: 0.5em; }
+
+#guideline { width: 50%; display: block; border-right: 1px solid #e2e2e2; position: absolute; z-index: -10; top: 0; left: 0; }
+
+.instance-name-options { text-align: center; padding: 0; margin-top: 1em; margin-bottom: 3em; border-bottom: 1px solid rgba(0,0,0,0.15); float: left; clear: both; width: 100%; }
+
+.instance-list-info li { display: inline; list-style: none; font-size: 1.3rem; }
+
+.instance-list-info li:after { content: "|"; padding: 0 0.5em; }
+
+
+.list-options { float: left; background-color: #fff; padding: 0.3em; top: 0.5em; left: 1em; position: absolute; z-index: 1; border: 1px solid rgba(0,0,0,0.15); box-shadow: 1px 1px 5px rgba(0,0,0,0.1); }
+
+.list-options a, .list-options input { font-size: 1.25rem; float: left; clear: none; text-decoration: none; text-align: left; width: 100%; background: none; cursor: pointer; padding: 0.3em; color: $brand-color-primary; z-index: 1; }
+
+.splash-activity { float: left; clear: none; width: 31.33%; height: 180px; background-color: $brand-color-primary; padding: 1em; color: #fff; margin-right: 3%; text-decoration: none; text-align: center; font-size: 1.8rem; font-weight: 400; line-height: 1.5em; box-shadow: 1px 1px 10px rgba(0,0,0,0.3); }
+.splash-activity h1 { margin-top: 0; margin-bottom: 0; }
+
+.splash-activity h1:after { content: ""; }
+.splash-activity:nth-child(3) { margin-right: 0; }
+
+.jsMessageSuccess, .jsMessageFailure { }
+
+.link-pdf { float: left; padding-left: 3em; padding-top: 0.5em; height: 3em; background: top left no-repeat url('../Images/icons/icon-pdf-32.png'); }
+.link-zip { float: left; padding-left: 3em; padding-top: 0.5em; height: 3em; background: top left no-repeat url('../Images/icons/icon-zip-32.png'); }
+
+#footer {
+    border-top:1px solid #e2e2e2;line-height:1rem;background-color:#fff;
+}
+
+@media screen and (max-width : $max-3 ) {
+    .splash-activity { clear: both; width: 100%; height: auto; margin-right: 0%; font-size: 1.5rem; line-height: 1.5em; margin-bottom: 1em; }
+}

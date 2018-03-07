@@ -1,0 +1,80 @@
+﻿@import "_variables.scss";
+
+.modal-holder {
+    display: none;
+    z-index: 100;
+    position: fixed;
+    margin: 0;
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    position: absolute;
+    display: none;
+    z-index: 100;
+    float: left;
+    margin: 0;
+    width: 46%;
+    height: auto;
+    background-color: #fff;
+    margin-left: 27%;
+    top: 1.5em;
+    border-radius: 4px;
+    margin-bottom: 2.5em;
+}
+.modal-content .content {
+    padding-top:0.5em;    
+}
+
+.modal-content.wide {
+    
+}
+.modal-content.narrow {
+    width: 30%;
+    margin-left:35%;
+}
+
+
+.modal-close {
+    width: 2em;
+    height: 2em;
+    float: right;
+    clear: both;
+    top: 1em;
+    right: 1em;
+    background: transparent no-repeat url('../../Content/Images/svg-close.svg');
+    background-position: center center;
+    background-size: 90% 90%;
+    cursor: pointer;
+    z-index: 1;
+    border:0;
+}
+
+.modal-close.close-this-fieldset {
+    position:absolute;
+    top:1em;
+    right:0.5em;
+}
+
+@media screen and (max-width : $max-3 ) {
+    .modal-content {
+        width: 100%;
+        margin-left: 0%;
+        top: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width : $max-1 ) {
+    .modal-content {
+        width: 100%;
+        margin-left: 0%;
+        top: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+}

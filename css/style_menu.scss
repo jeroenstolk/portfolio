@@ -1,0 +1,334 @@
+﻿.holder-navs {
+    float:left;
+    width:100%;
+    background-color: rgba(0,0,0,0.1);
+    height:3em;
+    clear:both;
+    z-index:5;
+}
+
+.navBar, .navBar-desktop {
+    position: absolute;
+    width: 100%;
+    height: 3em;
+    z-index: 1;
+}
+
+.navBar {
+    z-index: 10;
+}
+
+.navBar ul, .navBar-desktop ul {
+    padding: 0;
+}
+
+.navBar li, .navBar-desktop li {
+    padding: 0;
+}
+
+.navBar, .navBar-desktop a {
+    text-decoration: none;
+}
+
+.navBar-desktop {
+    display: block;
+}
+
+.navBar-desktop ul li {
+    float: left;
+    clear: none;
+    list-style: none;
+    height: 3em;
+    position: relative;
+    padding: 0;
+    line-height: unset;
+}
+
+.navBar-desktop ul li a, .toggle-submenu-label, .item-visual {
+    float: left;
+    width: 100%;
+    height: 3em;
+    padding: 1em 1.2em;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: $brand-color-primary;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+.navBar-desktop ul li a:hover, .item-visual:hover {
+    background-color: $brand-color-secondary;
+}
+
+.navBar-desktop a.item-visual, .navBar-desktop.right a.item-visual {
+    width: 3.5em;
+    height: 3em;
+    text-align: center;
+}
+
+
+
+.item-visual {
+    cursor: pointer;
+    background: $brand-color-primary no-repeat url('../Images/icons/svg-icon-home.svg');
+    background-size: 40% 40%;
+    background-position: center center;
+    
+}
+.item-visual.icon-home {background-image: url('../Images/icons/svg-icon-home.svg');}
+.item-visual.icon-user {background-image: url('../Images/icons/svg-icon-user.svg');}
+.item-visual.icon-exit {background-image: url('../Images/icons/svg-icon-exit.svg');}
+.item-visual.icon-power-off {background-image: url('../Images/icons/svg-icon-power-off.svg');}
+
+
+.icon-small, .icon-medium, .icon-large {
+    cursor: pointer;
+    background-position: center left;
+}
+.icon-small {
+    padding-left:2em !important;
+}
+.icon-medium, .icon-large {
+    padding-left:2.8em !important;
+}
+.icon-large {
+    padding-left:3.6em !important;
+}
+
+.icon-small::after, .icon-medium::after, .icon-large::after {
+    content:"";
+    height:100%;
+    width:1em;
+    float:left;
+    position:absolute !important;
+    left:0.6em;
+    top:0;
+    margin-top:0;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center center;
+    border-left:0px solid red;
+}
+.icon-medium::after, .icon-large::after {
+    height:100%;
+    width:1.5em;
+    left:0.75em;
+}
+.icon-large::after {
+    height:100%;
+    width:2em;
+    left:0.9em;
+}
+.icon-home::after {background-image: url('../Images/icons/svg-icon-home.svg');}
+.icon-exit::after {background-image: url('../Images/icons/svg-icon-exit.svg');}
+.icon-user::after {background-image: url('../Images/icons/svg-icon-user.svg');}
+.icon-power-off::after {background-image: url('../Images/icons/svg-icon-power-off.svg');}
+
+
+.navBar-desktop ul ul {
+    display: none;
+    position: absolute;
+    top: 3em;
+    left: 0;
+    padding: 0;
+    text-align:left;
+}
+.navBar-desktop.right ul ul {
+    right: 0;
+    text-align:right;
+}
+
+.navBar-desktop ul ul li {
+    float: left;
+    clear: both;
+    min-width: 12em;
+}
+.navBar-desktop.right ul ul li {
+    float: right;
+}
+
+.toggle-submenu-label #toggle-submenu {
+    display: none;
+}
+
+.toggle-submenu-label:hover .toggle-collect, .toggle-submenu-label:hover .toggle-collect ul {
+    display: block !important;
+}
+
+.toggle-submenu-label:hover + ul, .toggle-submenu-label + ul:hover {
+    display: block !important;
+}
+
+.toggle-collect ul {
+    top: 0 !important;
+}
+
+.toggle-collect {
+    float: left;
+    clear: both;
+    display: block;
+    position: absolute;
+    top: 3.3em;
+    left: 0;
+    z-index: 1;
+}
+
+nav {
+    display: none;
+}
+
+nav ul {
+    opacity: 0;
+    margin-top: 0px;
+    width: 100%;
+}
+
+nav ul li.prime:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+nav ul ul {
+    width: 100%;
+    margin-top: 0px;
+    display: none;
+}
+
+nav ul, nav ul ul {
+    transition: opacity 1s ease;
+    width: 100%;
+}
+
+nav ul a {
+    color: #000;
+    text-decoration: none;
+    transition: none .5s ease;
+    width: 100%;
+    height: 100%;
+    display: block;
+    float: left;
+    line-height: 40px;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+nav li, nav li ul li {
+    display: inline-block;
+    font-weight: 400;
+    background-repeat: no-repeat;
+    background-position: 0.75em center;
+    background-size: auto 80%;
+}
+
+nav #menu-toggle {
+    display: none;
+}
+
+nav .label-toggle {
+    display: none;
+}
+
+nav.wrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: #e2e2e2;
+}
+
+@media screen and (max-width : 980px ) {
+    .navBar-desktop {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        z-index: 2;
+    }
+
+    nav ul a {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        color: #fff;
+    }
+
+    nav ul, nav ul ul {
+        background-color: $brand-color-primary;
+        display: block;
+        list-style-type: none;
+        opacity: 0;
+        width: 0%;
+        text-align: center;
+        transition: width 1s ease, opacity 0.5s ease;
+        width: 3.75em;
+        visibility: visible;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 3.2em;
+        left: 0em;
+    }
+
+    nav ul ul {
+        width: 100%;
+        display: block;
+        float: left;
+        clear: both;
+        position: relative;
+        top: 0;
+    }
+
+    li.sub ul li {
+        background-color: #333;
+    }
+
+    nav li, nav li ul li {
+        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
+        color: #fff;
+        display: block;
+        font-size: 1em;
+        padding-left: 0px;
+        overflow: hidden;
+        float: left;
+        clear: both;
+        width: 100%;
+    }
+    nav li ul li, nav li.sub {
+        border-bottom: 1px solid #fff;
+        border-top: 0px solid #fff;
+    }
+
+    nav li.prime {
+        height: 40px;
+    }
+
+    nav #menu-toggle:checked ~ ul, nav #menu-toggle:checked ~ ul ul {
+        opacity: 1;
+        width: 100%;
+        visibility: visible;
+    }
+
+    nav #menu-toggle:checked ul {
+        width: 100%;
+        transition:width 1s ease;
+        opacity:0;
+    }
+
+    nav #menu-toggle:checked ~ ul a {
+        opacity: 1;
+        transition: opacity 1s ease;
+    }
+
+    nav .label-toggle {
+        background: linear-gradient(to bottom, $brand-color-primary 0%, $brand-color-primary 20%, transparent 20%, transparent 40%, $brand-color-primary 40%, $brand-color-primary 60%, transparent 60%, transparent 80%, $brand-color-primary 80%, $brand-color-primary 100%);
+        cursor: pointer;
+        display: block;
+        float: left;
+        height: 1.8em;
+        width: 2.1em;
+        margin: 0.60em;
+    }
+}

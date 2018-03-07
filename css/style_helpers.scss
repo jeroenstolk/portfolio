@@ -1,0 +1,40 @@
+﻿.clear-left { clear: left !important; }
+.clear-right { clear: right !important; }
+.hidden, input[type=hidden] { display: none !important; }
+.hidden-soft { display: none; }
+.clear { clear: both !important; }
+.note { font-style: italic; }
+.positive { color: rgba(102,204,51,1.00); text-shadow: 1px 1px rgba(255, 255, 255, 0.5); }
+.negative { color: rgba(204,51,51,1.00); text-shadow: 1px 1px rgba(255, 255, 255, 0.5); }
+
+
+.rule { border-top: 1px dashed #ccc; height: 1px; width: 100%; clear: both; float: left; margin: 25px 0; }
+.topSpace { margin-top: 25px !important; }
+.bottomSpace { margin-bottom: 25px !important; }
+.right { float: right !important; }
+.left { float: left !important; }
+
+.full-width { width: 100%; float: left; }
+.half-width { width: 49%; float: left; }
+.half-width:first-of-type { margin-right: 1%; }
+.half-width:last-of-type { margin-left: 1%; }
+.half-width-persist { width: 49% !important; }
+
+.explain-me-holder { float: left; clear: both; position: relative; width: 100%; height: auto; }
+.explain-me-holder p { position: absolute; width: 95%; right: -100%; margin-top: 0; padding: 0.5em; border-top: 1px solid rgba(204,51,51,1.00); }
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+
+.margin-small-left { margin-left: 0.5em; }
+.margin-small-right { margin-right: 0.5em; }
+.margin-medium-left { margin-left: 1em; }
+.margin-medium-right { margin-right: 1em; }
+.margin-large-left { margin-left: 1.5em; }
+.margin-large-right { margin-right: 1.5em; }
+
+
+@media screen and (max-width : $max-2 ) {
+    .half-width { width: 100%; clear: both; }
+}

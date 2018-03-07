@@ -1,0 +1,17 @@
+﻿$max-5: 1690px;
+$max-4: 1280px;
+$max-3: 980px;
+$max-2: 736px;
+$max-1: 480px;
+
+
+
+$brand-color-primary: #005daa;
+.color-primary, .color-primary a, a  {color:$brand-color-primary;}
+
+$brand-color-secondary: #036;
+.color-secondary, .color-secondary a  {color:$brand-color-secondary;}
+
+$negative-bg: rgba(255,0,0,0.5);
+$positive-bg: rgba(50,150,50,0.5);
+$neutral-bg: rgba(0,0,0,0.3);

@@ -1,0 +1,33 @@
+﻿
+
+.table * { box-sizing: border-box; line-height: 1.4em;border-collapse:collapse;}
+.table { width: 100%; margin: 1em 0 1em 0; float:left; clear: both;border-collapse: collapse; }
+.table th {font-weight:normal;}
+.table thead tr th {padding: 0.4em;}
+.table tbody tr td {padding: 0.4em; }
+.table tr td, .table tr th { text-align: right; vertical-align: top; border-bottom: 1px solid #fff;border-right:1px dotted rgba(0,0,0,0.15) !important; border-left:0px solid #fff !important;}
+.table tr:nth-child(odd) td { background-color: #efefef; }
+.table tr:nth-child(even) td {}
+.table tr td, .table tr th {}
+.table tr td:first-child, .table tr th:first-child {text-align:left;}
+    
+
+/* table columns division - 4 columns width */
+
+.table.columns-4 tr { width: 100%; display: block; float: left; }
+.table.columns-4 tr td:first-child, .table.columns-4 tr th:first-child { float: left; }
+.table.columns-4 tr td, .table.columns-4 tr th { display: block; float: left; width: 25%; }
+.table.columns-4 tr td:first-child, .table.columns-4 th:first-child, .table.columns-4 tr td:nth-child(5n), .table.columns-4 tr th:nth-child(5n) { text-align: left; width: 25%; }
+.table.columns-4 tr td:nth-child(4n), .table.columns-4 tr th:nth-child(4n) { clear: right; }
+.table.columns-4 tr td:nth-child(5n), .table.columns-4 tr th:nth-child(5n) { clear: left; }
+.table.columns-4 thead, .table.columns-4 tbody, .table.columns-4 tfoot {float:left; display:inline-block;width:100%;}
+.table.columns-4 tbody { overflow: scroll; max-height: 350px; overflow-x: hidden; position: relative; padding-bottom: 50px; }
+
+.table tr { margin-bottom: 5px; padding-bottom: 0px; border-bottom: 0px solid #e2e2e2; }
+.table tr th { color:#fff; border-bottom: 1px solid #fff; }
+.table thead tr { background: linear-gradient(#333, #000); }
+.tableHolder { float: left; clear: both; position: relative; width:100%;}
+.tableHolder .overlay { display:block; width: 98%; position: absolute; bottom: 0; height: 30%; background: linear-gradient(rgba(0,0,0,0.0), rgba(255,255,255,1) 90%); z-index: 1; }
+
+.table-actions {width:4em;}
+.table-status {width: 8em; text-transform: uppercase;font-weight: bold;color: #999; font-size: 1.2rem;text-indent: 8px;}

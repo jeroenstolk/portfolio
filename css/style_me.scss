@@ -1,0 +1,56 @@
+﻿.splash-bar {background-color:$brand-color-primary;}
+.splash-bar-sub {background-color:$brand-color-primary;}
+
+$color1: #f4f4f4;
+$color2: $brand-color-primary;
+
+.radio {
+  input[type="radio"] {
+    opacity: 0;
+    float:left;
+    clear:left;
+    + .radio-label {
+      &:before {
+        content: '';
+        background: $color1;
+        border-radius: 100%;
+        border: 1px solid darken($color1, 25%);
+        display: block;
+        width: 1.2em;
+        height: 1.2em;
+        cursor: pointer;
+        transition: all 250ms ease;
+        float:left;
+        clear:left;
+        margin:0;
+        margin-left:-1.75em;
+        margin-top:2px;
+      }
+    }
+    &:checked {
+      + .radio-label {
+        &:before {
+          background-color: $color2;
+          box-shadow: inset 0 0 0 4px $color1;
+        }
+      }
+    }
+    &:focus {
+      + .radio-label {
+        &:before {
+          outline: none;
+          border-color: $color2;
+        }
+      }
+    }
+    &:disabled {
+      + .radio-label {
+        &:before {
+          box-shadow: inset 0 0 0 4px $color1;
+          border-color: darken($color1, 25%);
+          background: darken($color1, 25%);
+        }
+      }
+    }
+  }
+}

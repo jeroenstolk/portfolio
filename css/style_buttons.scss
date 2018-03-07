@@ -1,0 +1,191 @@
+﻿button {
+    border: 1px solid #ccc;
+    padding: 3px 6px;
+    background: linear-gradient(#efefef, #e2e2e2);
+    border-radius: 3px;
+    font-size: 1.2rem;
+}
+
+.btn-primary.tab:first-child {
+    border-radius: 6px 0 0 0;
+}
+
+.btn-primary.tab:last-child {
+    border-radius: 0 6px 0 0;
+}
+
+.button-primary, .button-secondary, .button-action, .dt-button, .dt-button:focus {
+    padding: 3px 15px 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 3px;
+    color: #fff;
+    height: 32px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    background: transparent linear-gradient(#000, #4F4E4E) repeat scroll 0 0;
+    cursor: pointer;
+}
+
+.dt-button:focus {
+    text-shadow: unset !important;
+}
+
+.button-secondary {
+    padding: 3px 15px 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 3px;
+    color: #fff;
+    height: 24px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background: transparent linear-gradient(#000, #4F4E4E) repeat scroll 0 0;
+}
+
+.dt-button {
+    padding: 3px 15px 5px !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+    border-radius: 3px !important;
+    color: #fff !important;
+    height: 32px !important;
+    font-size: 1.3rem !important;
+    font-weight: 400 !important;
+    background: transparent linear-gradient(#000, #4F4E4E) repeat scroll 0 0 !important;
+    cursor: pointer !important;
+    border-top: 3px solid $brand-color-primary !important;
+    line-height: 20px;
+    box-shadow: none !important;
+    border-bottom-color: unset !important;
+    border-left-color: unset !important;
+    border-right-color: unset !important;
+}
+
+.dt-buttons {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.dt-button.disabled {
+    color: #dcdcdc !important;
+    background: transparent linear-gradient(#666, #888) repeat scroll 0 0 !important;
+    border-top: 3px solid #999 !important;
+}
+
+.button-start-stop {
+    background-color: #fff;
+    padding: 0 3px 0 3px;
+    border: 1px solid #e2e2e2;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #999;
+    cursor: pointer;
+    font-family: inherit;
+    width: 5em;
+    box-shadow: 0px 0px 3px rgba(255,255,255,0.6);
+    letter-spacing: -1px;
+    border-radius: 3px;
+}
+
+.button-action {
+    width: 2em;
+    height: 1.8em;
+    text-align: center;
+    padding: 0;
+    margin-left: 0.4em;
+    line-height: 1.8em;
+}
+
+.button-action.edit {
+    background: transparent linear-gradient(#666, #999) repeat scroll 0 0;
+}
+
+.button-action.edit:hover {
+    background: transparent linear-gradient(rgba(102, 102, 102, 0.80), rgba(153, 153, 153, 0.80)) repeat scroll 0 0;
+}
+
+.button-action.delete {
+    background: transparent linear-gradient(#9c2c2c, $brand-color-primary) repeat scroll 0 0;
+}
+
+.button-action.delete:hover {
+    background: transparent linear-gradient(rgba(156, 44, 44, 0.80), rgba(232, 69, 69, 0.80)) repeat scroll 0 0;
+}
+
+
+.formbutton:hover, .btn:hover, .button-primary:hover, .button-secondary:hover, .button-action:hover, .dt-button:hover {
+}
+
+
+.btn-primary, .btn-secondary, .btn-form-edit {
+    display:inline-block;
+    padding: 2px 10px 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-radius: 3px;
+    color: #000;
+    height: 24px;
+    line-height:18px;
+    font-size: 1.15rem;
+    font-weight: 400;
+    background: transparent linear-gradient(#000, #4F4E4E) repeat scroll 0 0;
+    background: transparent linear-gradient(#f2f2f2, #e2e2e2) repeat scroll 0 0;
+    text-shadow: 1px 1px 1px #fff;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    top: -4px;
+    margin-right: 0.5em;
+    text-decoration: none;
+}
+
+.formbutton, .btn {
+    display: inline-block;
+    padding: 3px 15px 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 3px;
+    color: #fff;
+    height: 32px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    background: transparent linear-gradient(#000, #4F4E4E) repeat scroll 0 0;
+    border-top: 3px solid $brand-color-primary;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 20px;
+}
+
+.btn-a {
+    font-size: 1.3rem;
+    float: left;
+    clear: none;
+    text-decoration: underline;
+    text-align: left;
+    width: auto;
+    background: none;
+    cursor: pointer;
+    padding:0em;
+    color: #005daa;
+    z-index: 1;
+    border:0;
+    line-height:1.5em;
+
+}
+
+.formbutton.disabled, .btn.disabled, button.btn[type=button]:disabled {
+    color: #dcdcdc !important;
+    background: transparent linear-gradient(#666, #888) repeat scroll 0 0 !important;
+    border-top: 3px solid #999 !important;
+}
+.btn-primary.disabled, .btn-secondary.disabled {color:#999;}
+
+.formbutton.disabled, .btn.disabled, button.btn[type=button]:disabled, button[type=button]:disabled, .btn-primary.disabled, .btn-secondary.disabled {
+    cursor: not-allowed;
+}
+
+.formgroup .formbutton, .form-indent {
+    float: left;
+    clear: left;
+    margin-left: 39%;
+}
+
+.btn-form-edit {position: absolute; top:-5px;right:0;}
+
